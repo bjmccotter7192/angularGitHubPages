@@ -1,27 +1,32 @@
-# AngularGitHubPages
+# How to create angular cli and run on github pages
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+## Install Node and Npm on Mac
+- open terminal
+- run "brew update"
+- run "brew install node"
 
-## Development server
+## Install Angular CLI
+- run "npm install -g @angular/cli"
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Create Github Repo
+- Go to github.com and login
+- Create new repo with your desired name
 
-## Code scaffolding
+## Clone Github Repo
+- run "git clone [GITHUB CLONE LINK]"
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Create Angular Project
+- navigate to clone repo and remove "Readme.md"
+- navigate to parent folder of cloned repo "cd .."
+- run "ng new [Name of the github repo]
 
-## Build
+## Install Github pages npm package
+- run "npm install -g angular-cli-ghpages"
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Modify Output path in angular.json (under options)
+- change "dist/[projectname]" to "dist/"
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Build project for pages
+- run "ng build --prod --base-href FULLGITHUBPATH"
+  - ex. ng build --prod --base-href https://bjmccotter7192/github.io/angularGitHubPages
+- run "ngh"
