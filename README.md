@@ -12,6 +12,9 @@
 - Go to github.com and login
 - Create new repo with your desired name
 
+## Setup Github Pages
+- go to settings -> githubpages -> set Master branch
+
 ## Clone Github Repo
 - run "git clone [GITHUB CLONE LINK]"
 
@@ -30,3 +33,6 @@
 - run "ng build --prod --base-href FULLGITHUBPATH"
   - ex. ng build --prod --base-href https://bjmccotter7192/github.io/angularGitHubPages
 - run "ngh"
+
+## Change Github pages 
+- Change the branch under settings -> githubpages -> gh-pages branch
