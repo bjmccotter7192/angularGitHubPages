@@ -1,9 +1,21 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
+/e2e
+/src
 /tmp
 /out-tsc
+.editorconfig
+angular.json
+browserslist
+karma.conf.json
+package-lock.json
+package.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
+tslint.json
+
 # Only exists if Bazel was run
 /bazel-out
 
